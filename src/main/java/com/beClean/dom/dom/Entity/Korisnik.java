@@ -80,11 +80,9 @@ public class Korisnik {
 		return id;
 	}
 
-
 	public void setId(int id) {
 		this.id = id;
 	}
-
 
 	public String getIme() {
 		return ime;
@@ -94,46 +92,37 @@ public class Korisnik {
 		this.ime = ime;
 	}
 
-
 	public String getPrezime() {
 		return prezime;
 	}
-
 
 	public void setPrezime(String prezime) {
 		this.prezime = prezime;
 	}
 
-
 	public pol getPol() {
 		return pol;
 	}
-
 
 	public void setPol(pol pol) {
 		this.pol = pol;
 	}
 
-
 	public String getAdresa() {
 		return adresa;
 	}
-
 
 	public void setAdresa(String adresa) {
 		this.adresa = adresa;
 	}
 
-
 	public Date getDatumRodjenja() {
 		return datumRodjenja;
 	}
 
-
 	public void setDatumRodjenja(Date datumRodjenja) {
 		this.datumRodjenja = datumRodjenja;
 	}
-
 
 	public daLiJePodStarateljStvom getDaLiJePodStarateljStvom() {
 		return daLiJePodStarateljStvom;
@@ -144,21 +133,17 @@ public class Korisnik {
 		this.daLiJePodStarateljStvom = daLiJePodStarateljStvom;
 	}
 
-
 	public String getMentalnoZdravlje() {
 		return mentalnoZdravlje;
 	}
-
 
 	public void setMentalnoZdravlje(String mentalnoZdravlje) {
 		this.mentalnoZdravlje = mentalnoZdravlje;
 	}
 
-
 	public String getStepenFunkcionalneZavisnosti() {
 		return stepenFunkcionalneZavisnosti;
 	}
-
 
 	public void setStepenFunkcionalneZavisnosti(String stepenFunkcionalneZavisnosti) {
 		this.stepenFunkcionalneZavisnosti = stepenFunkcionalneZavisnosti;
