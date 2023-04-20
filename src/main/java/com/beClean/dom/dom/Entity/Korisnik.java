@@ -27,26 +27,18 @@ public class Korisnik {
 	@Column(name="datum_rodjenja")
 	private Date datumRodjenja;
 	public enum daLiJePodStarateljStvom {da, ne};
-	
 	@Enumerated(EnumType.STRING)
 	@Column(name="da_li_je_pod_starateljstvom")
 	private daLiJePodStarateljStvom daLiJePodStarateljStvom;
-	
 	@Column(name = "mentalno_zdravlje")
 	private String mentalnoZdravlje;
 	@Column(name="stepen_funkcionalne_zavisnosti")
 	private String stepenFunkcionalneZavisnosti;
-	
 	public enum status {aktivan, pasivan};
 	@Enumerated(EnumType.STRING)
 	private status status;
-	
 	private String napomena;
-	
-	
-	
-	
-	
+
 	@OneToOne(mappedBy = "korisnik")
 	private IndividualniPlan individualniPlan;
 	
@@ -62,12 +54,6 @@ public class Korisnik {
 	@OneToOne(mappedBy = "korisnik")
 	private PrijemnaProcena prijemnaProcena;
 	
-
-
-
-
-	
-
 
 	public Korisnik(int id, String ime, String prezime, pol pol, String adresa,
 			Date datumRodjenja, daLiJePodStarateljStvom daLiJePodStarateljStvom,
@@ -103,7 +89,6 @@ public class Korisnik {
 	public String getIme() {
 		return ime;
 	}
-
 
 	public void setIme(String ime) {
 		this.ime = ime;
@@ -150,9 +135,6 @@ public class Korisnik {
 	}
 
 
-	
-
-
 	public daLiJePodStarateljStvom getDaLiJePodStarateljStvom() {
 		return daLiJePodStarateljStvom;
 	}
@@ -197,7 +179,4 @@ public class Korisnik {
 	public void setNapomena(String napomena) {
 		this.napomena = napomena;
 	}
-	
-	
-
 }
